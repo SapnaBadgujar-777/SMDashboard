@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Students</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h1>Student Management</h1>
+      <input type="text" id="searchInput" placeholder="Search student...">
+    </div>
+
+    <div class="content">
+      <div class="cards">
+        <div class="card">
+          <h3>Total Students</h3>
+          <p id="totalStudents">0</p>
+        </div>
+        <div class="card">
+          <h3>Active Courses</h3>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <h3>Attendance Rate</h3>
+          <p>89%</p>
+        </div>
+      </div>
+
+      <h2>Student List</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Grade</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Dipesh Tirmale</td>
+            <td>Java</td>
+            <td>A</td>
+            <td><button class="btn">Edit</button></td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Harish Tirmale</td>
+            <td>Python</td>
+            <td>B+</td>
+            <td><button class="btn">Edit</button></td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Rohit Sharma</td>
+            <td>C++</td>
+            <td>A-</td>
+            <td><button class="btn">Edit</button></td>
+          </tr>
+          <tr>
+            <td>104</td>
+            <td>Priya Joshi</td>
+            <td>DSA</td>
+            <td>B</td>
+            <td><button class="btn">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
